@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BASOTHO CULTURAL HERITAGE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    .crafts-hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #f4f0ff, #fdfdfd);
+    }
+    .crafts-hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: var(--accent, #6b4f9a);
+    }
+    .crafts-hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      color: #444;
+    }
+
+    .crafts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .craft-card {
+      background: #fff;
+      border: 2px solid #eee;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .craft-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 22px rgba(20,20,50,.08);
+      border-color: var(--accent, #6b4f9a);
+    }
+    .craft-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .craft-body {
+      padding: 16px;
+    }
+    .craft-body h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: var(--accent, #6b4f9a);
+    }
+    .craft-body p {
+      font-size: .95rem;
+      color: #555;
+    }
+    .craft-body a {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 500;
+      color: var(--accent, #6b4f9a);
+      text-decoration: none;
+      transition: color .3s;
+    }
+    .craft-body a:hover {
+      color: #3f2c6d;
+      text-decoration: underline;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      .crafts-hero h2 {
+        font-size: 1.6rem;
+      }
+      .crafts-hero p {
+        font-size: 1rem;
+      }
+    }
+    footer {
+    text-align: center;
+}
+
+</style>
+<body>
+
+        <header>
+        <nav>
+            <h1>Basotho Heritage</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="traditional clothing.html">Traditional Clothing</a></li>
+                <li><a href="music and dance.html">Music and Dance</a></li>
+                <li><a href="crafts and art.html">Crafts and Art</a></li>
+                <li><a href="contact and feedback.html">Contact and feedback</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+    <section class="crafts-hero">
+      <h2>Basotho Crafts & Art</h2>
+      <p>
+        From intricately woven baskets to symbolic beadwork and 
+        traditional pottery, Basotho crafts reflect creativity, 
+        identity, and heritage passed down through generations.
+      </p>
+    </section>
+
+    <section class="crafts-grid">
+      <article class="craft-card">
+        <img src="C:\Users\LENOVO\Desktop\FIRST\Woven Baskets.jpg" alt="Woven Basket">
+        <div class="craft-body">
+          <h3>Woven Baskets</h3>
+          <p>Made from grass and reeds, Basotho baskets are 
+             functional and decorative, often used in homes and markets.</p>
+          <a href="https://www.alamy.com/stock-photo/weaving-basket-men.html" target="_blank">Learn more</a>
+        </div>
+      </article>
+
+      <article class="craft-card">
+        <img src="C:\Users\LENOVO\Desktop\FIRST\Pottery.jpg" alt="Pottery">
+        <div class="craft-body">
+          <h3>Pottery</h3>
+          <p>Clay pots serve both practical purposes and 
+             ceremonial roles, with designs that tell cultural stories.</p>
+          <a href="https://za.pinterest.com/pin/south-sotho-potmaking-southern-africa-youtube--780811654159485012/" target="_blank">Learn more</a>
+        </div>
+      </article>
+
+      <article class="craft-card">
+        <img src="C:\Users\LENOVO\Desktop\FIRST\beadwork.jpg" alt="Beadwork">
+        <div class="craft-body">
+          <h3>Beadwork</h3>
+          <p>Beads are used to create jewelry and adornments, 
+             often carrying symbolic meanings of status, age, or tradition.</p>
+          <a href="https://za.pinterest.com/n_kap/southern-sotho-beadwork/" target="_blank">Learn more</a>
+        </div>
+      </article>
+
+      <article class="craft-card">
+        <img src="C:\Users\LENOVO\Desktop\FIRST\Textile & Tapestry.jpg" alt="Textile & Tapestry">
+        <div class="craft-body">
+          <h3>Textile & Tapestry</h3>
+          <p>Colorful woven fabrics and tapestries are part of 
+             decorative and ceremonial arts among the Basotho.</p>
+          <a href="https://www.iol.co.za/weekend-argus/lifestyle/basotho-blanket-exhibition-a-rich-tapestry-of-history-and-culture-a1e6d2a4-89fe-4f76-a49d-d71b9a92b94b" target="_blank">Learn more</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+        <p>&copy; 2025 Basotho Cultural Heritage. All rights reserved.</p>
+        </footer>
+
+        
+
+</body>
+</html>

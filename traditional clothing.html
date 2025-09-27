@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BASOTHO CULTURAL HERITAGE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    .container{
+  max-width:1200px;
+  margin:28px auto;
+  padding:0 20px;
+}
+.grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:var(--card-bg);
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(20,20,50,.06);
+      display:flex;
+      flex-direction:column;
+    }
+    .imgwrap{
+      position:relative;
+      overflow:hidden;
+      height:220px;
+    }
+    .imgwrap img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      transition:transform .36s ease,filter .36s ease;
+    }
+    .imgwrap::after{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,transparent 50%, rgba(0,0,0,.18));
+      opacity:0;
+      transition:opacity .36s;
+    }
+    .card:hover .imgwrap img{
+      transform:scale(1.06);
+      filter:brightness(.95);
+    }
+    .card:hover .imgwrap::after{
+      opacity:1;
+    }
+
+    .card-body{
+      padding:14px 16px;
+      display:flex;
+      flex-direction:column;gap:8px;
+    }
+    .title{
+      font-weight:600;
+      font-size:1rem;margin:0}
+    
+    .meta{
+      margin-top:auto;
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+
+    .imgwrap .zoom{
+      position:absolute;
+      right:10px;
+      bottom:10px;
+      background:rgba(255,255,255,.85);
+      backdrop-filter:blur(3px);
+      padding:6px;
+      border-radius:8px;
+      font-size:.8rem;
+      color:#222}
+      
+      .badge{
+      background:#fff;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:.85rem;
+      border:1px solid rgba(20,20,50,.04);
+      }
+      .meta a{
+      font-size:.85rem;
+      color:var(--accent);
+      text-decoration:none;
+      border-bottom:1px dashed rgba(107,79,154,.15);
+      padding-bottom:2px;
+    }
+    .desc{
+      font-size:.9rem;
+      color:#444;
+      line-height:1.3;
+      margin:0;
+    }
+
+
+
+    
+    .controls{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:12px;
+    }
+    
+    
+
+    @media (max-width:540px){.imgwrap{height:160px}}
+</style>
+<body>
+
+        <header>
+        <nav>
+            <h1>Basotho Heritage</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="traditional clothing.html">Traditional Clothing</a></li>
+                <li><a href="music and dance.html">Music and Dance</a></li>
+                <li><a href="crafts and art.html">Crafts and Art</a></li>
+                <li><a href="contact and feedback.html">Contact and feedback</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <div class="container">
+      <h1>Basotho Traditional Clothing — Gallery (35 examples)</h1>
+      <p>Tlhaiso Ea Liphahlo Tse Fapaneng Tsa Basotho</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid" id="gallery">
+      
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\basotho blanket.jpg" alt="Basotho blanket"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Basotho Blanket (General)</h3>
+          <p class="desc">The iconic woollen blanket worn by Basotho people — a national symbol used for warmth and ceremony.</p>
+          <div class="meta"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Parade_of_Basotho_women.jpg/500px-Parade_of_Basotho_women.jpg" target="_blank" rel="noopener">Learn more (Wikipedia)</a></div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\modernised basotho blanket.jpg" alt="Modernised Basotho blankets"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Modernised Basotho Blankets</h3>
+          <p class="desc">Contemporary designs that adapt traditional motifs for fashion and export.</p>
+          <div class="meta"><a href="https://www.africablanket.co.za/collections/basotho-heritage-blankets" target="_blank" rel="noopener"> Africa Blanket </a></div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\mokorotlo.jpg" alt="Mokorotlo hat"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Mokorotlo (Conical Hat)</h3>
+          <p class="desc">The traditional straw conical hat; an important cultural symbol appearing in Lesotho's flag and coat of arms.</p>
+          <div class="meta"><a href="https://www.shutterstock.com/search/basotho-boys" target="_blank" rel="noopener">Shutter Stock</a></div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\mokorotlong.jpg" alt="Mokorotlo-shaped building"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Mokorotlo Iconography</h3>
+          <p class="desc">Architectural and emblematic uses of the mokorotlo shape in Lesotho (e.g., houses and public art).</p>
+          <div class="meta"><a href="http://www.africaimagelibrary.com/media/bcca055a-1948-4e57-b881-4e6920540cdd-mokorotlo-basotho-hat-building-maseru-lesotho" target="_blank" rel="noopener">Africa Image Library</a></div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\basothohatmarket.jpg" alt="Basotho hat shop"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Basotho Hat (Market)</h3>
+          <p class="desc">Traditional hats for sale — often paired with blankets and other garments for tourists and locals.</p>
+          <div class="meta"><a href="https://www.shutterstock.com/image-photo/traditional-basotho-grassworks-made-hat-called-543212509?src=WRIMC6-xf8zqBnUUMcXkZA-1-52" target="_blank" rel="noopener">Shutter Stock</a></div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\seanamarena.jpg" alt="Seana Marena blanket"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Seana Marena</h3>
+          <p class="desc">A ceremonial blanket variant often associated with chiefs and important events.</p>
+          <div class="meta"><a href="https://koboafrica.com/products/basotho-seanamarena-chromatic-blanket-red-black-white-stripe" target="_blank" rel="noopener">Kobo Africa</a></div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\khotsoblanket.jpg" alt="Khotso blanket"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Khotso (Peace)</h3>
+          <p class="desc">Blanket named for the Basotho national motto — often used as a symbolic gift.</p>
+          <div class="meta"><a href="https://www.africablanket.co.za/collections/khotso-collection" target="_blank" rel="noopener">Africa Blanket</a></div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\bridesblanket.jpg" alt="Lingoetsi bridal blanket"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Lingoetsi (Bride's Blanket)</h3>
+          <p class="desc">A style often reserved for brides or important female rites of passage.</p>
+          <div class="meta"><a href="https://styles2d.com/beautiful-basotho-traditional-blanket-attire-for-wedding/" target="_blank" rel="noopener">Styles 2D</a></div>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\ceremonialhat.jpg" alt="Mokorotlo hat worn"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Mokorotlo — ceremonial hat</h3>
+          <p class="desc">Worn on ceremonial occasions; strongly tied to Basotho identity.</p>
+          <div class="meta"><a href="https://www.flickr.com/photos/boundless-southernafrica/52799928076/" target="_blank" rel="noopener">FlickR</a></div>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\blanketsandmusic.jpg" alt="Blanket And Music"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Blanket & Music</h3>
+          <p class="desc">Blankets often accompany traditional performances, dances and musicians.</p>
+          <div class="meta"><a href="https://afktravel.com/94857/10-reasons-travelers-love-lesotho/" target="_blank" rel="noopener">AFKTRAVEL</a></div>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\blanket fashion.jpg" alt="Blanket fashion"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Blanket Fashion</h3>
+          <p class="desc">Designers blend Basotho blanket patterns into coats, scarves and dresses.</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/29062360070353697/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Men's Kaross-style Wrap.jpg" alt="Traditional men's wrap"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Men's Kaross-style Wrap</h3>
+          <p class="desc">Blankets replace older kaross (animal-skin cloaks) as everyday wrap garments.</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/473933560759287441/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Hat + Blanket Pairing.jpg" alt="Hat & blanket pair"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Hat + Blanket Pairing</h3>
+          <p class="desc">Common combination for ceremonial dress and national celebrations.</p>
+          <div class="meta"><a href="http://clipkulture.com/lovely-blue-basotho-blanket-and-straw-kobo-hat/" target="_blank" rel="noopener">Clipkulture</a></div>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\edding Attire.jpg" alt="Bridal cloth"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Wedding Attire</h3>
+          <p class="desc">Blankets and special garments for weddings often carry symbolic motifs.</p>
+          <div class="meta"><a href="https://styles2d.com/beautiful-basotho-traditional-blanket-attire-for-wedding/" target="_blank" rel="noopener">Style2D</a></div>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Children's Traditional Wear.jpg" alt="Children in traditional dresscode"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Children's Traditional Wear</h3>
+          <p class="desc">Smaller blankets and shawls worn by children during festivals and rites.</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/petit-cabinet-de-curiosites--442408363366591852/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Hat Making.jpg" alt="Artisan making a hat"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Hat Making</h3>
+          <p class="desc">Local artisans weave and shape the mokorotlo from local grasses and materials.</p>
+          <div class="meta"><a href="http://www.junglekey.fr/search.php?query=Basotho&type=image&lang=fr&region=fr&adv=1" target="_blank" rel="noopener">JungleKey.Fr</a></div>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Festival Dress.jpg" alt="Cultural performance"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Festival Dress</h3>
+          <p class="desc">Bold patterns and colours mark festival garments across Lesotho and Sotho communities.</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/522839837972313687/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Contemporary Fusion.jpg" alt="Blanket as fashion statement"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Contemporary Fusion</h3>
+          <p class="desc">Designers fuse Basotho motifs with modern silhouettes for global fashion shows.</p>
+          <div class="meta"><a href="https://za.pinterest.com/pin/579345939558506578/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 19 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Accessories & Beadwork.jpg" alt="Sotho beadwork"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Accessories & Beadwork</h3>
+          <p class="desc">Beaded belts, necklaces and woven trims commonly complement blanket outfits.</p>
+          <div class="meta"><a href="https://www.pinterest.co.uk/pin/lesotho-south-africa--45950858675222465/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 20 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Many patterns reference mountains, shields, or important events.jpg" alt="Heritage motif"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Symbolic Motifs</h3>
+          <p class="desc">Many patterns reference mountains, shields, or important events (e.g., royal visits).</p>
+          <div class="meta"><a href="https://ar.inspiredpencil.com/pictures-2023/basotho-culture" target="_blank" rel="noopener">AR.inspiredpencil</a></div>
+        </div>
+      </article>
+
+      <!-- 21 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\MorenaSeFate.jpg" alt="Traditional cloak"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Morena / SeFate</h3>
+          <p class="desc">Blanket types used daily and for less formal occasions (everyday wear).</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/276689970833377770/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 22 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Hat as National Emblem.jpg" alt="National emblem hat"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Hat as National Emblem</h3>
+          <p class="desc">The mokorotlo appears on the national flag and other official iconography.</p>
+          <div class="meta"><a href="https://ar.inspiredpencil.com/pictures-2023/basotho-hat" target="_blank" rel="noopener">Ar.inspiredpencil</a></div>
+        </div>
+      </article>
+
+      <!-- 23 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Museum Pieces.jpg" alt="Blanket museum piece"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Museum Pieces</h3>
+          <p class="desc">Historic blankets and ceremonial items preserved in museums and collections worldwide.</p>
+          <div class="meta"><a href="https://mapmyway.co.za/art-of-the-basotho-blanket-exhibition-extended-at-sanlam-art-gallery/" target="_blank" rel="noopener">Mapmyway</a></div>
+        </div>
+      </article>
+
+      <!-- 24 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Cultural Identity.jpg" alt="Seal of cultural identity"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Cultural Identity</h3>
+          <p class="desc">Clothing is an outward sign of Basotho identity, used in celebrations, mourning and public life.</p>
+          <div class="meta"><a href="https://boyzeeo5.blogspot.com/2017/09/basotho-blanket-kobo.html" target="_blank" rel="noopener">blogsport.com</a></div>
+        </div>
+      </article>
+
+      <!-- 25 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Reinterpretations.jpg" alt="Designer reinterpretation"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Reinterpretations</h3>
+          <p class="desc">International designers collaborate with Lesotho artisans to reinterpret blanket motifs.</p>
+          <div class="meta"><a href="https://ar.inspiredpencil.com/pictures-2023/basotho-culture" target="_blank" rel="noopener">Ar.inspiredpencil</a></div>
+        </div>
+      </article>
+
+      <!-- 26 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Sashes & Thanas.jpg" alt="Traditional sash"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Sashes & Thanas</h3>
+          <p class="desc">Smaller woven elements like thethana accompany garments and tell social stories.</p>
+          <div class="meta"><a href="https://smarthistory.org/thethana-south-sotho-artist/" target="_blank" rel="noopener">smarthistory.org</a></div>
+        </div>
+      </article>
+
+      <!-- 27 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Hat Variations.jpg" alt="Hat detail"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Hat Variations</h3>
+          <p class="desc">Different regional makers produce small variations on the mokorotlo's shape and decoration.</p>
+          <div class="meta"><a href="https://www.alamy.com/stock-photo/basotho-hat.html" target="_blank" rel="noopener">Alamy</a></div>
+        </div>
+      </article>
+
+      <!-- 28 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\shields, spears.jpg" alt="Blanket pattern closeup"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Pattern Close-ups</h3>
+          <p class="desc">Many patterns include shields, spears, mountains and symbolic shapes tied to local stories.</p>
+          <div class="meta"><a href="https://www.pinterest.co.uk/bespokeshields/sothotswana-shields/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 29 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Blankets sold as souvenirs support local craft economies and tourism.jpg" alt="Blanket for sale"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Souvenirs & Sales</h3>
+          <p class="desc">Blankets sold as souvenirs support local craft economies and tourism.</p>
+          <div class="meta"><a href="https://storage.googleapis.com/dyktorqnhfyfee/different-types-of-basotho-blanket.html" target="_blank" rel="noopener">Storage.googleapis</a></div>
+        </div>
+      </article>
+
+      <!-- 30 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Basotho garments.jpg" alt="Blanket exhibition"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Exhibitions</h3>
+          <p class="desc">Cultural exhibitions feature Basotho garments to explain national history and craft.</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/african-basotho-blanket-coats--544020829990646592/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 31 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Heirloom Pieces.jpg" alt="Heirloom blanket"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Heirloom Pieces</h3>
+          <p class="desc">Special blankets are passed down through families as heirlooms with stories attached.</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/heirloom-basotho-wool-blanket-black-and-white-in-2022--628885535474815281/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 32 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Women & Hats.jpg" alt="Hat worn by women"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Women & Hats</h3>
+          <p class="desc">Women also wear the mokorotlo in certain contexts; styles vary by gender and region.</p>
+          <div class="meta"><a href="https://ar.inspiredpencil.com/pictures-2023/basotho-hat" target="_blank" rel="noopener">Ar.inspiredpencil</a></div>
+        </div>
+      </article>
+
+      <!-- 33 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Daily Use.jpg" alt="Blanket in daily life"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Daily Use</h3>
+          <p class="desc">Blankets are practical clothing in Lesotho's high-altitude climate — warmth and identity combined.</p>
+          <div class="meta"><a href="https://www.pinterest.com/pin/540502392752064522/" target="_blank" rel="noopener">Pinterest</a></div>
+        </div>
+      </article>
+
+      <!-- 34 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Textile Patterns.jpg" alt="Traditional textile patterns"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Textile Patterns</h3>
+          <p class="desc">Close study of textile patterns reveals layered meanings and regional influences.</p>
+          <div class="meta"><a href="http://fashioningafrica.brightonmuseums.org/textiles/r6095-3/" target="_blank" rel="noopener">Fashioningafrica.brightonmuseums</a></div>
+        </div>
+      </article>
+
+      <!-- 35 -->
+      <article class="card">
+        <div class="imgwrap">
+          <img src="C:\Users\LENOVO\Desktop\FIRST\Heritage & Future.jpg" alt="Heritage & future"/>
+          <div class="zoom">View</div>
+        </div>
+        <div class="card-body">
+          <h3 class="title">Heritage & Future</h3>
+          <p class="desc">Basotho clothing continues to evolve — maintained by artisans, redesigned by creatives, and honored in museums.</p>
+          <div class="meta"><a href="https://za.pinterest.com/pin/350014202299079494/" target="_blank" rel="noopener">za.pinterest</a></div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+  
+
+  <footer>
+        <p>&copy; 2025 Basotho Cultural Heritage. All rights reserved.</p>
+        </footer>
+
+
+
+        
+
+</body>
+</html>
